@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Mon Amour ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+        linear-gradient(135deg,#ff6a88,#ff99ac);
+    display:flex;
+    justify-content:center;
+    padding:30px 15px;
+    color:white;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1200px;
+    width:100%;
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(18px);
+    border-radius:35px;
+    padding:40px;
+    box-shadow:0 30px 60px rgba(0,0,0,0.35);
+    animation:fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(40px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+h1{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:20px;
+}
+
+/* LETTRE D'AMOUR */
+.love-letter{
+    max-width:850px;
+    margin:0 auto 50px;
+    background:rgba(255,255,255,0.35);
+    padding:40px;
+    border-radius:35px;
+    text-align:center;
+    line-height:1.9;
+    box-shadow:0 20px 40px rgba(0,0,0,0.25);
+}
+
+.love-letter p{
+    margin-bottom:22px;
+    font-size:1.1rem;
+}
+
+.love-letter .title{
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+.love-letter .signature{
+    font-size:1.3rem;
+    font-weight:600;
+    margin-top:30px;
+}
+
+/* SECTIONS */
+h2{
+    text-align:center;
+    margin:50px 0 25px;
+    font-weight:500;
+}
+
+/* MESSAGES */
+.messages{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:22px;
+}
+
+.card{
+    background:rgba(255,255,255,0.3);
+    padding:25px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 30px rgba(0,0,0,0.25);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.02);
+}
+
+/* GALERIE */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    height:360px;
+    object-fit:cover;
+    border-radius:30px;
+    cursor:pointer;
+    box-shadow:0 20px 35px rgba(0,0,0,0.45);
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.06);
+}
+
+/* VIDEOS */
+.videos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.video-box{
+    background:rgba(0,0,0,0.3);
+    padding:18px;
+    border-radius:30px;
+}
+
+video{
+    width:100%;
+    aspect-ratio:16/9;
+    border-radius:25px;
+    box-shadow:0 20px 35px rgba(0,0,0,0.45);
+}
+
+/* LIGHTBOX */
+.lightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:25px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    margin-top:50px;
+    opacity:0.85;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>💖 Pour Toi, Mon Amour 💖</h1>
+
+    <!-- LETTRE D'AMOUR -->
+    <div class="love-letter">
+        <p class="title">💘 Joyeuse Saint-Valentin mon amour 💘</p>
+
+        <p>
+            Aujourd’hui et tous les jours de ma vie, je remercie le destin de t’avoir mise sur mon chemin.
+            Ton sourire éclaire mes journées, ton amour me donne de la force, et ton cœur rend mon monde plus beau.
+        </p>
+
+        <p>
+            Avec toi, j’ai appris ce que signifie aimer sincèrement, rêver à deux et avancer main dans la main.
+            Tu es ma joie, ma paix, mon bonheur, et la plus belle chose qui me soit arrivée.
+        </p>
+
+        <p>
+            Je te promets de t’aimer, de te respecter et de te rendre heureuse aujourd’hui, demain et pour toujours.
+        </p>
+
+        <p class="signature">
+            Je t’aime plus que les mots ne peuvent l’exprimer ❤️
+        </p>
+    </div>
+
+    <!-- MESSAGES -->
+    <h2>💌 Pensées du Cœur</h2>
+    <div class="messages">
+        <div class="card">❤️ Mon cœur te choisit aujourd’hui et pour toujours.</div>
+        <div class="card">💞 Ton sourire est mon endroit préféré.</div>
+        <div class="card">💘 Chaque battement de mon cœur porte ton nom.</div>
+        <div class="card">🌹 T’aimer est la plus belle chose que je fais chaque jour.</div>
+    </div>
+
+    <!-- PHOTOS -->
+    <h2>📸 Nos Souvenirs</h2>
+    <div class="gallery">
+        <img src="/image/WhatsApp Image 2026-02-14 at 22.38.29.jpeg">
+        <img src="image/WhatsApp Image 2026-02-14 at 22.39.58.jpeg">
+        <img src="image/WhatsApp Image 2026-02-14 at 22.45.12.jpeg">
+    </div>
+
+    <!-- VIDEOS -->
+    <h2>🎥 Nos Moments</h2>
+    <div class="videos">
+        <div class="video-box">
+            <video controls>
+                <source src="vidéo/WhatsApp Video 2026-02-14 at 22.38.39.mp4">
+            </video>
+        </div>
+        <div class="video-box">
+            <video controls>
+                <source src="vidéo/WhatsApp Video 2026-02-14 at 22.45.11.mp4">
+            </video>
+        </div>
+
+        <div class="video-box">
+            <video controls>
+                <source src="vidéo/WhatsApp Video 2026-02-14 at 22.43.57.mp4">
+            </video>
+        </div>
+
+        <div class="video-box">
+            <video controls>
+                <source src="vidéo/WhatsApp Video 2026-02-14 at 22.43.58.mp4">
+            </video>
+        </div>
+
+        <div class="video-box">
+            <video controls>
+                <source src="vidéo/WhatsApp Video 2026-02-14 at 22.43.41.mp4">
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        💞 Fait avec amour, aujourd’hui et pour toujours 💞
+    </footer>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <img id="lightbox-img">
+</div>
+
+<script>
+const images = document.querySelectorAll(".gallery img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+images.forEach(img=>{
+    img.addEventListener("click",()=>{
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+    });
+});
+
+lightbox.addEventListener("click",()=>{
+    lightbox.style.display = "none";
+});
+</script>
+
+</body>
+</html>
